@@ -418,12 +418,41 @@ body {
   min-height: 300px;
 }
 
-.invite-banner {
-  min-height: 203px;
-  background-color: #1749b3;
+.solo-content {
+  // background-color: #1749b3;
+  border-radius: 32px;
+  // gap: 0;
+  // grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.invite-title {
+.solo-banner {
+  min-height: 203px;
+  width: 100%;
+  background-color: #1749b3;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.solo-banner-content {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.solo-banner-container {
+  max-width: 508px;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.solo-title {
   margin: 0;
   font-size: 26px;
   line-height: 36px;
@@ -432,13 +461,13 @@ body {
   margin-bottom: 24px;
 }
 
-.invite-subtitle {
+.solo-subtitle {
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
 }
 
-.invite-banner-link {
+.solo-banner-link {
   background-color: #1749b3;
   border-radius: 32px;
   display: flex;
@@ -447,21 +476,22 @@ body {
   min-height: 203px;
 }
 
-.invite-banner-link-container {
+.solo-banner-link-container {
   background: #f1f4f8;
   width: 445px;
   border-radius: 16px;
   padding: 28px 72px;
+  text-align: center;
 }
 
-.invite-link {
+.solo-link {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
 
-.invite-link-subtitle {
+.solo-link-subtitle {
   margin: 0;
   margin-bottom: 10px;
   font-size: 20px;
@@ -470,7 +500,7 @@ body {
   color: #171717;
 }
 
-.invite-link-text {
+.solo-link-text {
   margin: 0;
   margin-right: 11px;
   font-size: 20px;
@@ -479,6 +509,28 @@ body {
   text-decoration: underline;
   text-transform: uppercase;
   color: #1749b3;
+}
+
+// .solo-btn {
+//   padding: 52px 60px;
+// }
+
+.solo-btn-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1749b3;
+  border-radius: 32px;
+}
+
+.solo-btn-text {
+  padding: 16px 81px;
+  background: #ffffff;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: #171717;
 }
 
 .first-card-row {
@@ -517,7 +569,7 @@ body {
 
 .faq-content {
   margin-bottom: 16px;
-  // grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .faq-banner {
@@ -526,17 +578,18 @@ body {
 
 .faq-banner-container {
   padding: 40px;
+  width: 100%;
 }
 
 .faq-first-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 19px;
 }
 
 .faq-second-row {
   display: none;
+  margin-top: 19px;
 }
 
 .faq-title {
@@ -553,34 +606,24 @@ body {
   color: #333333;
 }
 
+.faq-btn-item {
+  display: flex;
+  justify-content: center;
+}
+
 .faq-btn-text {
   padding: 16px 61px;
   background: #333333;
   border-radius: 16px;
 }
 
-.request-invite-title {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 31px;
-  color: #ffffff;
+.request {
+  margin-bottom: 120px;
 }
 
-.request-invite-subtitle {
-  font-size: 18px;
-  line-height: 27px;
-  color: #ffffff;
-}
-
-.request-btn-text {
-  padding: 16px 81px;
-  background: #ffffff;
-  border-radius: 16px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 22px;
-  color: #171717;
-}
+// .request-content {
+//   grid-template-columns: repeat(auto-fit, minmax(auto, 704px));
+// }
 
 .footer {
   background: #1749b3;
@@ -624,4 +667,23 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #d3d3d3;
+}
+
+@media (max-width: 1225px) {
+  .solo-content {
+    width: min-content;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 375px) {
 }
